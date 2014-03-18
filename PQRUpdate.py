@@ -1,15 +1,7 @@
 import urllib, os, shutil
 
-def rhook(bnum, bsize, total):
-	percent = 100 * bsize * bnum / total
-	if percent > 100:
-		percent = 100
-	print '%f%%' % percent
-
 def main():
 	url = 'https://dl.dropboxusercontent.com/u/39925787/'
-	hostsfolder = 'F:\\Game\\WOWBot\\PQR\\'
-	downfolder = os.getcwd()
 	print 'Downloading PQR.exe'
 	urllib.urlretrieve(url + 'PQR/PQR.exe', 'PQR/PQR.exe')
 	print 'Downloading PQR.exe.config'
